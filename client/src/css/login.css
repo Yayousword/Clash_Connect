@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Comfortaa-Bold";
+    src: url(../comfortaa/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Comfortaa-Light";
+    src: url(../comfortaa/Comfortaa-Light.ttf);
+}
+
+
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+    margin: 0;
+    padding: 0;  
+}
+
+#root{
+    width: 100%;
+    height: 100vh;
+}
+
+#login{
+    background-image: url("https://wallpapercave.com/wp/wp4898090.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:"Comfortaa-Bold" ;
+    height: 100vh;
+}
+
+#login header{
+    display: flex;
+}
+
+#header_login{
+    margin: 0cm auto;
+    margin-top: 1cm;
+    width: 400px;
+    display: flex;
+    text-align: center;
+}
+
+#discord_login{
+    margin-top: 1em;
+
+}
+
+#login #title {
+    font-size: 60px;
+    color: #f0ac19;
+}
+
+
+#login input{
+    height: 30px;
+    font-family: "Comfortaa-Light";  
+    border-radius: 0px 0px 0px 10px;
+    width: 80%;
+    height: 37px;
+}
+
+#login input[type="text"],input[type="password"]{
+    text-align: center;
+    border-color: #1e262b;
+}
+
+#login input[type="TokenCR"],input[type="password"]{
+    text-align: center;
+    border-color: #1e262b;
+}
+
+#block_con h2{
+    color: #df4b06;
+    text-align: left;
+    margin-left: 1.5cm;
+    font-size: 40px;
+}
+
+
+#block_con {
+    margin: 0cm auto;
+    text-align: center;
+    width: 500px;
+    border-style: groove;
+    border-radius: 30px;
+    border-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #440531;
+}
+
+.date_naissence{
+    display: flex;
+    flex-direction: row; 
+    width: 85%;
+    margin-top: 0.1cm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name_surname input[type="text"]{
+    margin-top: 5%;
+}
+.date{
+    margin-right: 0.1cm;
+}
+
+@keyframes hove {
+    to {
+        color: #fdbeab
+    }
+}
+
+.text{
+    margin: 0.2cm 0.07cm 0cm 0.05cm;
+}
+
+.button{
+    padding: 0.3cm 0.07cm 0.4cm 0.07cm;
+}
+
+
+.lien{
+    margin: 2%;
+    font-family: "Comfortaa-Light";
+    font-size: 17px;
+
+}
+
+.lien span{
+    color:#b0c9da;
+    text-decoration: underline;
+}
+
+.lien span:hover{
+    animation: hove 2s both
+}
+.name input{
+    width: 33%;
+}
+
+.button input{  
+    color: #293136;
+    background-color: #c989b9;
+    font-family: "Comfortaa-Bold";  
+    border-radius: 3px 3px 3px 3px;
+    border-style: groove;    
+    font-size: 16px;
+}
+
+#login input[type="submit"]:hover,input[type="button"]:hover{
+    color: #b0c9da ;
+    background-color: #1e262b;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+footer p{
+    color: #000000;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+@media screen and (max-width: 500px)  {
+    #block_con{
+        width: 97%;
+    }
+    #login #title{
+        display: flex;
+        margin-left: 4%;
+    }
+}
